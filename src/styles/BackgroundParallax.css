@@ -1,0 +1,75 @@
+#bgp_void {
+    background-color: rgb(10, 10, 10);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#bgp_layer3 {
+    z-index: 1;
+    animation-duration: 9.5s;
+}
+
+#bgp_layer2 {
+    z-index: 2;
+    animation-duration: 7s;
+}
+
+#bgp_layer1 {
+    z-index: 3;
+    animation-duration: 4s;
+}
+
+.bgp_layer {
+    position: absolute;
+    width: 150vw;
+    height: 150vh;
+    overflow: hidden;
+    animation-name: StarfieldGlow;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-direction: normal;
+    animation-duration: 1s;
+}
+
+.bgp_layer1_star {
+    background-color: rgb(110, 110, 110);
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.bgp_layer2_star {
+    background-color: rgb(61, 61, 61);
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.bgp_layer3_star {
+    background-color: rgb(180, 180, 180);
+    width: 0.2vw;
+    height: 0.2vw;
+    border-radius: 50%;
+    position: absolute;
+}
+
+@keyframes StarfieldGlow {
+    0% {
+        opacity: 100%;
+    } 
+    50% {
+        opacity: 30%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
