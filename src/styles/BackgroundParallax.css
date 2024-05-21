@@ -62,6 +62,15 @@
     position: absolute;
 }
 
+#content-wrapper {
+    z-index: 200;
+    position: relative;
+    padding: 2vh 25vw;
+    background-color: rgba(29, 29, 29, 0.08);
+    width: 50vw;
+    min-height: 100vh;
+}
+
 @keyframes StarfieldGlow {
     0% {
         opacity: 100%;

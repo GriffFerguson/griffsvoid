@@ -15,6 +15,11 @@ export default function BackgroundParallax({children}: {children: React.ReactNod
             <ParallaxLayer layer={3} mouseFactor={0.01}>
                 <StarfieldLayer number={100} min={80} width={120} offset={-10} layer={3} />
             </ParallaxLayer>
+            <div id="content-wrapper">
+                <main>
+                    {children}
+                </main>
+            </div>
         </div>
     )
 }
